@@ -4,7 +4,7 @@ const CounterHOC = (props) => {
     const {name} = props;
     return (
         <div className="counterHOC">
-            <div>Hi {name}</div>
+            <div>Hi Iam {name}</div>
             <div>Hello</div>
         </div>
     );
