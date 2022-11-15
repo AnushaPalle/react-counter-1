@@ -7,7 +7,7 @@ const CounterHOC = (props) => {
             <h1>This is header</h1>
             <div>Hi Iam {name}</div>
             <div>Hello</div>
-            <div>Hiiiiiiiiiiiiiiii  fellow</div>
+            <div>Hiiiiiiiiiiiiiiii</div>
         </div>
     );
 }
