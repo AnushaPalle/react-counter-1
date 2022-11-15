@@ -6,7 +6,7 @@ const CounterHOC = (props) => {
         <div className="counterHOC">
             <div>Hi Iam {name}</div>
             <div>Hello</div>
-            <div>Hiiiiiiiiiiiiiiii Idiot</div>
+            <div>Hiiiiiiiiiiiiiiii Idiot stupid fellow</div>
         </div>
     );
 }
