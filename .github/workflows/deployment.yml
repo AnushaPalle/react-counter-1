@@ -14,11 +14,7 @@ jobs:
         run: npm ci
       - name: Build project
         run: npm run build
-      - name: set git credentials
-        run: | 
-            git config --global user.email "anushapalle11@gmail.com"
-            git config --global user.name "AnushaPalle"
-      - name: Deploy
-        run: npm run deploy
+      - name: Deploy react app to github pages
+        uses: tanwanimohit/deploy-react-to-ghpages@v1.0.1
   
   
