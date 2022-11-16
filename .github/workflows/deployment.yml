@@ -46,5 +46,7 @@ jobs:
         run: npm run build
       - name: Deploy react app to github pages
         uses: tanwanimohit/deploy-react-to-ghpages@v1.0.1
+      - name: output name of git user
+        run: git config --get user.name 
   
   
