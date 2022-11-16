@@ -1,7 +1,36 @@
 name: Deploy Project
 on: push
 jobs: 
-  deploy:
+  Build:
+    runs-on: ubuntu-latest
+    steps: 
+      - name: Get code
+        uses: actions/checkout@v3
+      - name: install NodeJS
+        uses: actions/setup-node@v3
+        with:
+          node-version: 18
+      - name: Install dependencies
+        run: npm ci
+      - name: Build project
+        run: npm run build
+  Test:
+    needs: Build 
+    runs-on: ubuntu-latest
+    steps: 
+      - name: Get code
+        uses: actions/checkout@v3
+      - name: install NodeJS
+        uses: actions/setup-node@v3
+        with:
+          node-version: 18
+      - name: Install dependencies
+        run: npm ci
+      - name: Build project
+        run: npm run build
+      - name: Run Tests
+        run: npm run test
+  Deploy:
     runs-on: ubuntu-latest
     steps: 
       - name: Get code
@@ -16,5 +45,3 @@ jobs:
         run: npm run build
       - name: Deploy react app to github pages
         uses: tanwanimohit/deploy-react-to-ghpages@v1.0.1
-  
-  
