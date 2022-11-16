@@ -45,7 +45,7 @@ jobs:
       - name: Build project
         run: npm run build
       - name: set origin
-        run: git remote set-url origin https://AnushaPalle:Bharg@vi9@github.com/AnushaPalle/react-counter-1.git
+        run: git remote set-url origin git@github.com:AnushaPalle/react-counter-1.git
       - name: set name of git user
         run: git config user.name AnushaPalle
       - name: set email of git user
