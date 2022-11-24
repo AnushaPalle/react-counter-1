@@ -8,6 +8,7 @@ const CounterHOC = (props) => {
             <div>Hi Iam {name}</div>
             <div>Hello</div>
             <div>Hiiiiiiiiiiiiiiii  fellow</div>
+            <div>Hiiiiiiiiiiiiiiii  fellow</div>
         </div>
     );
 }
